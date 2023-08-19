@@ -8,8 +8,4 @@ jobs:
     uses: Kotatsu-RTM/.github/.github/workflows/rtmpack_build.yml@master
     with:
       Publishing: true
-      NexusUsername: ${{ secrets.SIRO256_NEXUS_USER }}
-      NexusPassword: ${{ secrets.SIRO256_NEXUS_PASSWORD }}
-      SingingKeyId: ${{ secrets.SIRO256_MAVEN_SIGNING_KEY_ID }}
-      SigningKey: ${{ secrets.SIRO256_MAVEN_SIGNING_KEY }}
-      SigningKeyPassword: ${{ secrets.SIRO256_MAVEN_SIGNING_KEY_PASSWORD }}
+    secrets: inherit
