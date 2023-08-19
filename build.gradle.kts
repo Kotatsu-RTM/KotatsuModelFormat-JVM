@@ -101,6 +101,10 @@ tasks {
                     } else {
                         uri("https://repo.siro256.dev/repository/maven-public")
                     }
+                credentials {
+                    username = System.getenv("RepositoryUsername")
+                    password = System.getenv("RepositoryPassword")
+                }
             }
         }
     }
